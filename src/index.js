@@ -7,7 +7,7 @@ import ApolloClient from 'apollo-boost';
 
 // Your GraphQL Endpoint here
 const client = new ApolloClient({
-  uri: 'https://codaisseur-tennis-scores-jh.herokuapp.com/v1/graphql',
+  uri: 'https://somethingsomething.herokuapp.com/v1/graphql',
 });
 
 ReactDOM.render(
