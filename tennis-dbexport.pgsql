@@ -233,10 +233,10 @@ CREATE TABLE public.setts (
     id bigint NOT NULL,
     match_id integer NOT NULL,
     nr smallint NOT NULL,
-    winner_ref character varying(2) NOT NULL,
-    winner_id integer NOT NULL,
-    p1_score smallint NOT NULL,
-    p2_score smallint NOT NULL
+    winner_ref character varying(2),
+    winner_id integer,
+    p1_score smallint DEFAULT 0 NOT NULL,
+    p2_score smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -542,9 +542,9 @@ INSERT INTO public.setts VALUES (221, 120, 2, 'p2', 153, 0, 6);
 INSERT INTO public.setts VALUES (222, 121, 1, 'p2', 155, 4, 6);
 INSERT INTO public.setts VALUES (223, 121, 2, 'p1', 146, 6, 3);
 INSERT INTO public.setts VALUES (224, 121, 3, 'p1', 146, 6, 1);
-INSERT INTO public.setts VALUES (225, 122, 1, 'p1', 146, 0, 1);
-INSERT INTO public.setts VALUES (226, 123, 1, 'p2', 155, 2, 0);
-INSERT INTO public.setts VALUES (227, 124, 1, 'p1', 146, 0, 0);
+INSERT INTO public.setts VALUES (225, 122, 1, NULL, NULL, 0, 1);
+INSERT INTO public.setts VALUES (226, 123, 1, NULL, NULL, 2, 0);
+INSERT INTO public.setts VALUES (227, 124, 1, NULL, NULL, 0, 0);
 
 
 --
